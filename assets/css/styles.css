@@ -11,6 +11,7 @@
     --banner-text-color: #ffffff;
     --body-bg-color: #ffffff;
     font-size: 10px;
+    --hero-bg-color: #000000;
 }
 
 body {
@@ -244,3 +245,160 @@ a:hover {
     box-shadow: inset 0 -20px 0 #fdd912;
 }
 /* END CONTACT ME */
+
+/* START HERO */
+.hero-outer {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--hero-bg-color) ;
+    background-image: url('../images/hero_bg.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-outer .section-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero-outer .hero-text {
+    font-size: 10rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.hero-outer .hero-icons {
+    display: flex;
+}
+.hero-outer  a {
+    color: #fff;
+    display: inline-block;
+    width: 4.2rem;
+    height: 4.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-outer ion-icon{
+    font-size: 18px;
+    
+}
+
+.hero-outer  a:hover {
+    box-shadow: none;
+    opacity: 0.8;
+}
+
+
+.main-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+.main-nav  header {
+    display: flex;
+    justify-content: center;
+    padding: 30px 35px;
+}
+
+.fixed-header {
+    background-color: #ffffff;
+    transition: all 1.5s ease 0ms;
+}
+
+h1 a {
+    color: #ffffff;
+}
+
+.fixed-header h1 a {
+    color: var(--heading-text-color);
+}
+
+h1 a:hover {
+    box-shadow: none;
+}
+
+.main-nav  nav {
+    display: none;
+}
+
+.fixed-header nav {
+    display: block;
+}
+
+.main-nav nav ul {
+    display: flex;
+}
+
+.main-nav .section-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav nav a {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #999999;
+    margin-left: 4.0rem;
+}
+.main-nav nav a:hover {
+    color: var(--heading-text-color); 
+    box-shadow: inset 0 -8px 0 #fdd912;
+}
+/* END HERO */
+
+/* START RECENT WORKS */
+
+.recent-works .section-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.recent-works ul {
+    display: flex;
+}
+
+.recent-works ul a {
+    margin-right: 25px;
+}
+
+.recent-works .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.recent-works .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* END RECENT WORKS */
+
+/* START LATEST BLOGS */
+.blog{
+    background-color: var(--gray-bg);
+}
+.blog-inner{
+    display: flex;
+}
+.blog1{
+    min-width: 300px;
+    padding-right: 30px;
+}
+
+.blog3{
+    max-width: 300px;
+    padding-left: 30px;
+}
+/* END LATEST BLOGS */
